@@ -407,15 +407,12 @@ For safety and legal reasons, we cannot remove certain items. Click on a card to
 <section id="contact">
 <h2>Get Your Free Quote in 60 Seconds</h2>
 
-<form action="https://formsubmit.co/titanjunkllc@gmail.com" method="POST">
+<!-- Fixed Form Using mailto Fallback -->
+<form id="quoteForm">
 <input type="text" name="name" placeholder="Your Name" required>
 <input type="tel" name="phone" placeholder="Phone Number" required>
 <input type="text" name="zip" placeholder="Zip Code" required>
 <textarea name="message" rows="4" placeholder="Describe your junk (couch, fridge, full garage, etc.)" required></textarea>
-
-<input type="hidden" name="_subject" value="New Quote Request from Titan Website!">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" value="https://titanjunkremoval.com/thanks">
 
 <button type="submit" class="btn submit-btn">GET MY FREE QUOTE</button>
 </form>
@@ -440,6 +437,19 @@ Email: titanjunkllc@gmail.com
 
 <a href="tel:8564189786" class="call-btn">📞 Call Now</a>
 
+<script>
+// JavaScript to send form via mailto if FormSubmit not used
+document.getElementById('quoteForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const name = encodeURIComponent(this.name.value);
+    const phone = encodeURIComponent(this.phone.value);
+    const zip = encodeURIComponent(this.zip.value);
+    const message = encodeURIComponent(this.message.value);
+
+    const mailto = `mailto:titanjunkllc@gmail.com?subject=New Quote Request from Titan Website&body=Name:%20${name}%0APhone:%20${phone}%0AZip:%20${zip}%0AMessage:%20${message}`;
+    window.location.href = mailto;
+});
+</script>
+
 </body>
 </html>
-
