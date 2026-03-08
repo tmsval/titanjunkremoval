@@ -1,455 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Titan Junk Removal | Junk Removal South Jersey</title>
-
-<meta name="description" content="Titan Junk Removal provides fast, affordable junk removal across South Jersey including Gloucester County, Camden County, and surrounding areas. Same-day service available. Call 856-418-9786.">
-<meta name="keywords" content="junk removal South Jersey, junk removal Gloucester County, furniture removal NJ, appliance removal South Jersey, house cleanout NJ"> 
-<meta name="author" content="Titan Junk Removal">
-
-<style>
-:root{
---gold:#d4af37;
---dark:#1a1a1a;
-}
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-body{
-font-family:'Segoe UI',Arial,sans-serif;
-background:#f8f8f8;
-color:#222;
-line-height:1.6;
-}
-header{
-background:var(--dark);
-color:white;
-padding:1rem 5%;
-position:sticky;
-top:0;
-z-index:100;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-max-width:1200px;
-margin:0 auto;
-}
-.logo{
-font-size:2rem;
-font-weight:800;
-color:var(--gold);
-}
-.nav-links{
-display:flex;
-gap:2rem;
-}
-.nav-links a{
-color:white;
-text-decoration:none;
-font-weight:600;
-}
-.nav-links a:hover{
-color:var(--gold);
-}
-.hero{
-background:linear-gradient(rgba(26,26,26,0.85),rgba(26,26,26,0.85)),
-url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80');
-background-size:cover;
-background-position:center;
-color:white;
-text-align:center;
-padding:120px 20px;
-}
-.hero h1{
-font-size:3.5rem;
-margin-bottom:1rem;
-}
-.hero p{
-font-size:1.4rem;
-max-width:700px;
-margin:0 auto 2rem;
-}
-.btn{
-display:inline-block;
-background:var(--gold);
-color:#000;
-padding:14px 32px;
-font-size:1.2rem;
-font-weight:700;
-border-radius:50px;
-text-decoration:none;
-transition:all .3s;
-margin:.5rem;
-}
-.btn:hover{
-background:#fff;
-transform:scale(1.05);
-}
-section{
-padding:80px 5%;
-max-width:1200px;
-margin:0 auto;
-}
-h2{
-font-size:2.5rem;
-text-align:center;
-margin-bottom:3rem;
-color:var(--dark);
-}
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:2rem;
-}
-.service-card{
-background:white;
-padding:2rem;
-border-radius:12px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
-}
-.service-card h3{
-color:var(--gold);
-margin:1rem 0;
-font-size:1.6rem;
-}
-.why-us{
-background:var(--dark);
-color:white;
-}
-.why-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:2rem;
-}
-.why-item{
-text-align:center;
-}
-.why-item h3{
-color:var(--gold);
-margin-bottom:1rem;
-}
-form{
-max-width:600px;
-margin:0 auto;
-display:grid;
-gap:1rem;
-}
-input,textarea{
-padding:14px;
-border:2px solid #ddd;
-border-radius:8px;
-font-size:1rem;
-}
-.submit-btn{
-background:var(--gold);
-color:black;
-border:none;
-cursor:pointer;
-font-weight:700;
-padding:14px;
-}
-.contact-info{
-text-align:center;
-margin-top:3rem;
-font-size:1.3rem;
-}
-.phone{
-font-size:2.4rem;
-color:var(--gold);
-font-weight:800;
-text-decoration:none;
-}
-.phone:hover{
-color:#b38f2e;
-}
-.call-btn{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#d4af37;
-color:black;
-font-weight:800;
-padding:16px 22px;
-border-radius:50px;
-text-decoration:none;
-box-shadow:0 5px 15px rgba(0,0,0,0.3);
-z-index:999;
-}
-footer{
-background:var(--dark);
-color:#aaa;
-text-align:center;
-padding:3rem 5%;
-}
-
-/* Flippable Cards */
-.flip-grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-  gap:2rem;
-}
-.flip-card {
-  perspective:1000px;
-}
-.flip-card-inner {
-  position:relative;
-  width:100%;
-  padding-top:100%; /* square */
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  cursor:pointer;
-}
-.flip-card-inner.flipped {
-  transform: rotateY(180deg);
-}
-.flip-card-front,
-.flip-card-back {
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  border-radius:12px;
-  backface-visibility:hidden;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  padding:15px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.08);
-}
-.flip-card-front img {
-  width:60px;
-  margin-bottom:15px;
-}
-.flip-card-front {
-  background:white;
-}
-.flip-card-back {
-  background:#d4af37;
-  color:#000;
-  transform:rotateY(180deg);
-  text-align:center;
-  font-weight:600;
-}
-</style>
-</head>
-
-<body>
-
-<header>
-<nav>
-<div class="logo">TITAN</div>
-<div class="nav-links">
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#why">Why Us</a>
-<a href="#contact">Contact</a>
-</div>
-</nav>
-</header>
-
-<section id="home" class="hero">
-<h1>South Jersey Junk Removal</h1>
-<p>Furniture, appliances, house cleanouts and more.<br>
-Fast same-day junk removal across South Jersey.</p>
-<a href="#contact" class="btn">GET FREE QUOTE NOW</a>
-</section>
-
-<section>
-<h2>Trusted by South Jersey Homeowners</h2>
-<div class="services">
-<div class="service-card">
-<h3>⭐ 5 Star Service</h3>
-<p>Friendly professional crews that respect your home.</p>
-</div>
-<div class="service-card">
-<h3>💰 Fair Pricing</h3>
-<p>Volume-based pricing with no surprise fees.</p>
-</div>
-<div class="service-card">
-<h3>⚡ Fast Removal</h3>
-<p>Most jobs completed in under an hour.</p>
-</div>
-</div>
-</section>
-
-<section id="services">
-<h2>Our Services</h2>
-<div class="services">
-<div class="service-card">
-<h3>🛋️ Furniture & Appliances</h3>
-<p>Couches, beds, fridges, washers — we take it all.</p>
-</div>
-<div class="service-card">
-<h3>🏠 Full House Cleanouts</h3>
-<p>Estates, garages, basements, attics — completely cleared.</p>
-</div>
-<div class="service-card">
-<h3>🚚 Same Day Service</h3>
-<p>Call us today — we'll be there today.</p>
-</div>
-</div>
-</section>
-
-<section id="areas">
-<h2>Areas We Serve</h2>
-<p style="text-align:center;max-width:800px;margin:auto;">
-Titan Junk Removal proudly serves all of South Jersey.
-</p>
-<div class="services" style="margin-top:2rem;">
-<div class="service-card"><h3>Gloucester County</h3></div>
-<div class="service-card"><h3>Camden County</h3></div>
-<div class="service-card"><h3>Salem County</h3></div>
-<div class="service-card"><h3>Burlington County</h3></div>
-</div>
-</section>
-
-<section id="why" class="why-us">
-<h2 style="color:white;">Why Choose Titan?</h2>
-<div class="why-grid">
-<div class="why-item">
-<h3>Upfront Pricing</h3>
-<p>No hidden fees. You see the price before we load.</p>
-</div>
-<div class="why-item">
-<h3>Eco Friendly</h3>
-<p>Most items we haul are recycled or donated.</p>
-</div>
-<div class="why-item">
-<h3>100% Satisfaction</h3>
-<p>If you're not happy, we make it right.</p>
-</div>
-</div>
-</section>
-
-<!-- Flippable Items We Cannot Take -->
 <section id="rules">
-<h2>Items We Cannot Take</h2>
-<p style="text-align:center;max-width:700px;margin:auto;margin-bottom:40px;">
-For safety and legal reasons, we cannot remove certain items. Click on a card to see details.
-</p>
+  <h2>Items We Cannot Take</h2>
+  <p style="text-align:center;max-width:700px;margin:auto;margin-bottom:40px;">
+    For safety and legal reasons, we cannot remove certain items. Click on a card to see details.
+  </p>
 
-<div class="flip-grid">
+  <div class="flip-grid">
 
-<div class="flip-card" onclick="this.querySelector('.flip-card-inner').classList.toggle('flipped')">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="https://cdn-icons-png.flaticon.com/64/992/992700.png" alt="Hazardous Chemicals">
-      <h3>Hazardous Chemicals</h3>
+    <div class="flip-card" onclick="this.querySelector('.flip-card-inner').classList.toggle('flipped')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://images.unsplash.com/photo-1604014239055-32bde4a5ff5e?crop=entropy&cs=tinysrgb&fit=crop&h=60&w=60" alt="Hazardous Chemicals">
+          <h3>Hazardous Chemicals</h3>
+        </div>
+        <div class="flip-card-back">
+          Industrial chemicals, solvents, pesticides, toxic substances.
+        </div>
+      </div>
     </div>
-    <div class="flip-card-back">
-      Industrial chemicals, solvents, pesticides, toxic substances.
+
+    <div class="flip-card" onclick="this.querySelector('.flip-card-inner').classList.toggle('flipped')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://images.unsplash.com/photo-1581090700227-7c3032799c10?crop=entropy&cs=tinysrgb&fit=crop&h=60&w=60" alt="Automotive Fluids">
+          <h3>Automotive Fluids</h3>
+        </div>
+        <div class="flip-card-back">
+          Motor oil, gasoline, antifreeze, brake fluids.
+        </div>
+      </div>
     </div>
+
+    <div class="flip-card" onclick="this.querySelector('.flip-card-inner').classList.toggle('flipped')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://images.unsplash.com/photo-1593991313066-08d7e2b5a7f4?crop=entropy&cs=tinysrgb&fit=crop&h=60&w=60" alt="Propane Tanks">
+          <h3>Propane Tanks</h3>
+        </div>
+        <div class="flip-card-back">
+          Grill tanks or compressed gas cylinders.
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" onclick="this.querySelector('.flip-card-inner').classList.toggle('flipped')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4436cf?crop=entropy&cs=tinysrgb&fit=crop&h=60&w=60" alt="Asbestos">
+          <h3>Asbestos</h3>
+        </div>
+        <div class="flip-card-back">
+          Materials containing asbestos require licensed removal.
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" onclick="this.querySelector('.flip-card-inner').classList.toggle('flipped')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://images.unsplash.com/photo-1581404917873-1d90f8ee21c3?crop=entropy&cs=tinysrgb&fit=crop&h=60&w=60" alt="Wet Paint">
+          <h3>Wet Paint</h3>
+        </div>
+        <div class="flip-card-back">
+          Paint must be fully dried before disposal.
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" onclick="this.querySelector('.flip-card-inner').classList.toggle('flipped')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?crop=entropy&cs=tinysrgb&fit=crop&h=60&w=60" alt="Biohazard Waste">
+          <h3>Biohazard Waste</h3>
+        </div>
+        <div class="flip-card-back">
+          Medical waste, needles, and hazardous biological materials.
+        </div>
+      </div>
+    </div>
+
   </div>
-</div>
-
-<div class="flip-card" onclick="this.querySelector('.flip-card-inner').classList.toggle('flipped')">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="https://cdn-icons-png.flaticon.com/64/889/889140.png" alt="Automotive Fluids">
-      <h3>Automotive Fluids</h3>
-    </div>
-    <div class="flip-card-back">
-      Motor oil, gasoline, antifreeze, brake fluids.
-    </div>
-  </div>
-</div>
-
-<div class="flip-card" onclick="this.querySelector('.flip-card-inner').classList.toggle('flipped')">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="https://cdn-icons-png.flaticon.com/64/1198/1198391.png" alt="Propane Tanks">
-      <h3>Propane Tanks</h3>
-    </div>
-    <div class="flip-card-back">
-      Grill tanks or compressed gas cylinders.
-    </div>
-  </div>
-</div>
-
-<div class="flip-card" onclick="this.querySelector('.flip-card-inner').classList.toggle('flipped')">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="https://cdn-icons-png.flaticon.com/64/345/345323.png" alt="Asbestos">
-      <h3>Asbestos</h3>
-    </div>
-    <div class="flip-card-back">
-      Materials containing asbestos require licensed removal.
-    </div>
-  </div>
-</div>
-
-<div class="flip-card" onclick="this.querySelector('.flip-card-inner').classList.toggle('flipped')">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="https://cdn-icons-png.flaticon.com/64/399/399302.png" alt="Wet Paint">
-      <h3>Wet Paint</h3>
-    </div>
-    <div class="flip-card-back">
-      Paint must be fully dried before disposal.
-    </div>
-  </div>
-</div>
-
-<div class="flip-card" onclick="this.querySelector('.flip-card-inner').classList.toggle('flipped')">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="https://cdn-icons-png.flaticon.com/64/290/290799.png" alt="Biohazard Waste">
-      <h3>Biohazard Waste</h3>
-    </div>
-    <div class="flip-card-back">
-      Medical waste, needles, and hazardous biological materials.
-    </div>
-  </div>
-</div>
-
-</div>
 </section>
-
-<section id="contact">
-<h2>Get Your Free Quote in 60 Seconds</h2>
-
-<form action="https://formsubmit.co/titanjunkllc@gmail.com" method="POST">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="tel" name="phone" placeholder="Phone Number" required>
-<input type="text" name="zip" placeholder="Zip Code" required>
-<textarea name="message" rows="4" placeholder="Describe your junk (couch, fridge, full garage, etc.)" required></textarea>
-
-<input type="hidden" name="_subject" value="New Quote Request from Titan Website!">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" value="https://titanjunkremoval.com/thanks">
-
-<button type="submit" class="btn submit-btn">GET MY FREE QUOTE</button>
-</form>
-
-<div class="contact-info">
-<p>Or reach us directly:</p>
-<p style="margin:1.5rem 0;">
-<a href="tel:8564189786" class="phone">856-418-9786</a>
-</p>
-<p style="margin-top:10px;font-size:18px;">
-Email: titanjunkllc@gmail.com
-</p>
-</div>
-</section>
-
-<footer>
-<p><strong>Titan Junk Removal</strong> • Serving all of South Jersey</p>
-<p style="margin-top:1rem;">
-856-418-9786 • © 2026 Titan Junk Removal
-</p>
-</footer>
-
-<a href="tel:8564189786" class="call-btn">📞 Call Now</a>
-
-</body>
-</html>
