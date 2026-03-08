@@ -36,7 +36,7 @@
     .contact { background: white; }
     form { max-width: 600px; margin: 0 auto; display: grid; gap: 1rem; }
     input, textarea { padding: 14px; border: 2px solid #ddd; border-radius: 8px; font-size: 1rem; }
-    .submit-btn { background: var(--gold); color: black; border: none; cursor: pointer; font-weight: 700; }
+    .submit-btn { background: var(--gold); color: black; border: none; cursor: pointer; font-weight: 700; padding: 14px; }
 
     .contact-info { text-align: center; margin-top: 3rem; font-size: 1.3rem; }
     .phone { font-size: 2.4rem; color: var(--gold); font-weight: 800; text-decoration: none; }
@@ -83,37 +83,7 @@
     </div>
   </section>
 
-  <!-- UPDATED CONTACT FORM THAT ACTUALLY WORKS -->
+  <!-- FIXED CONTACT FORM - No more app selector -->
   <section id="contact" class="contact">
     <h2>Get Your Free Quote in 60 Seconds</h2>
-    
-    <form action="https://formsubmit.co/tylermschofield@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="tel" name="phone" placeholder="Phone Number" required />
-      <input type="text" name="zip" placeholder="Zip Code" required />
-      <textarea name="message" rows="4" placeholder="Describe your junk (couch, fridge, full garage, etc.)" required></textarea>
-      
-      <!-- Hidden fields so you know where the quote came from -->
-      <input type="hidden" name="_subject" value="New Quote Request from Titan Website!">
-      <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html"> <!-- optional -->
-      <input type="hidden" name="_captcha" value="false">
-      
-      <button type="submit" class="btn submit-btn">GET INSTANT QUOTE</button>
-    </form>
 
-    <div class="contact-info">
-      <p>Or reach us directly:</p>
-      <p style="margin:1.5rem 0;">
-        <a href="tel:8564189786" class="phone">856-418-9786</a>
-      </p>
-      <a href="mailto:tylermschofield@gmail.com" class="btn" style="background:#333; color:white;">📧 Email Us</a>
-    </div>
-  </section>
-
-  <footer>
-    <p><strong>Titan Junk Removal</strong> • Serving all of South Jersey</p>
-    <p style="margin-top:1rem;">856-418-9786 • © 2026 Titan Junk Removal. All rights reserved.</p>
-  </footer>
-
-</body>
-</html>
