@@ -192,30 +192,34 @@ padding:3rem 5%;
 }
 
 /* Flippable Cards */
+.flip-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:2rem;
+}
 .flip-card {
-  background-color: transparent;
-  perspective: 1000px;
+  perspective:1000px;
 }
 .flip-card-inner {
-  position: relative;
-  width: 100%;
-  padding-top: 100%;
-  transform-style: preserve-3d;
+  position:relative;
+  width:100%;
+  padding-top:100%; /* square */
   transition: transform 0.6s;
-  cursor: pointer;
+  transform-style: preserve-3d;
+  cursor:pointer;
 }
-.flip-card:hover .flip-card-inner,
 .flip-card-inner.flipped {
   transform: rotateY(180deg);
 }
-.flip-card-front, .flip-card-back {
-  position: absolute;
+.flip-card-front,
+.flip-card-back {
+  position:absolute;
   top:0;
   left:0;
   width:100%;
   height:100%;
   border-radius:12px;
-  backface-visibility: hidden;
+  backface-visibility:hidden;
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -233,13 +237,9 @@ padding:3rem 5%;
 .flip-card-back {
   background:#d4af37;
   color:#000;
-  transform: rotateY(180deg);
+  transform:rotateY(180deg);
   text-align:center;
-}
-.flip-grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-  gap:2rem;
+  font-weight:600;
 }
 </style>
 </head>
@@ -340,6 +340,7 @@ For safety and legal reasons, we cannot remove certain items. Click on a card to
 </p>
 
 <div class="flip-grid">
+
 <div class="flip-card" onclick="this.querySelector('.flip-card-inner').classList.toggle('flipped')">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -347,7 +348,7 @@ For safety and legal reasons, we cannot remove certain items. Click on a card to
       <h3>Hazardous Chemicals</h3>
     </div>
     <div class="flip-card-back">
-      <p>Industrial chemicals, solvents, pesticides, toxic substances.</p>
+      Industrial chemicals, solvents, pesticides, toxic substances.
     </div>
   </div>
 </div>
@@ -359,7 +360,7 @@ For safety and legal reasons, we cannot remove certain items. Click on a card to
       <h3>Automotive Fluids</h3>
     </div>
     <div class="flip-card-back">
-      <p>Motor oil, gasoline, antifreeze, brake fluids.</p>
+      Motor oil, gasoline, antifreeze, brake fluids.
     </div>
   </div>
 </div>
@@ -371,7 +372,7 @@ For safety and legal reasons, we cannot remove certain items. Click on a card to
       <h3>Propane Tanks</h3>
     </div>
     <div class="flip-card-back">
-      <p>Grill tanks or compressed gas cylinders.</p>
+      Grill tanks or compressed gas cylinders.
     </div>
   </div>
 </div>
@@ -383,7 +384,7 @@ For safety and legal reasons, we cannot remove certain items. Click on a card to
       <h3>Asbestos</h3>
     </div>
     <div class="flip-card-back">
-      <p>Materials containing asbestos require licensed removal.</p>
+      Materials containing asbestos require licensed removal.
     </div>
   </div>
 </div>
@@ -395,7 +396,7 @@ For safety and legal reasons, we cannot remove certain items. Click on a card to
       <h3>Wet Paint</h3>
     </div>
     <div class="flip-card-back">
-      <p>Paint must be fully dried before disposal.</p>
+      Paint must be fully dried before disposal.
     </div>
   </div>
 </div>
@@ -407,15 +408,12 @@ For safety and legal reasons, we cannot remove certain items. Click on a card to
       <h3>Biohazard Waste</h3>
     </div>
     <div class="flip-card-back">
-      <p>Medical waste, needles, and hazardous biological materials.</p>
+      Medical waste, needles, and hazardous biological materials.
     </div>
   </div>
 </div>
-</div>
 
-<p style="text-align:center;margin-top:40px;font-weight:600;">
-Not sure about an item? Call us at <a href="tel:8564189786">856-418-9786</a>.
-</p>
+</div>
 </section>
 
 <section id="contact">
