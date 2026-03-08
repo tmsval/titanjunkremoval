@@ -190,7 +190,7 @@ text-align:center;
 padding:3rem 5%;
 }
 
-/* Flippable Cards */
+/* Flippable Cards (text only) */
 .flip-grid {
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
@@ -202,7 +202,7 @@ padding:3rem 5%;
 .flip-card-inner {
   position:relative;
   width:100%;
-  padding-top:100%; /* square */
+  padding-top:100%;
   transition: transform 0.6s;
   transform-style: preserve-3d;
   cursor:pointer;
@@ -225,13 +225,8 @@ padding:3rem 5%;
   align-items:center;
   padding:15px;
   box-shadow:0 5px 15px rgba(0,0,0,0.08);
-}
-.flip-card-front img {
-  width:60px;
-  height:60px;
-  margin-bottom:15px;
-  object-fit:cover;
-  border-radius:8px;
+  text-align:center;
+  font-weight:600;
 }
 .flip-card-front {
   background:white;
@@ -240,8 +235,6 @@ padding:3rem 5%;
   background:#d4af37;
   color:#000;
   transform:rotateY(180deg);
-  text-align:center;
-  font-weight:600;
 }
 </style>
 </head>
@@ -334,7 +327,7 @@ Titan Junk Removal proudly serves all of South Jersey.
 </div>
 </section>
 
-<!-- Flippable Items We Cannot Take -->
+<!-- Flippable Items We Cannot Take (Text Only) -->
 <section id="rules">
 <h2>Items We Cannot Take</h2>
 <p style="text-align:center;max-width:700px;margin:auto;margin-bottom:40px;">
@@ -345,8 +338,7 @@ For safety and legal reasons, we cannot remove certain items. Click on a card to
 <div class="flip-card" onclick="this.querySelector('.flip-card-inner').classList.toggle('flipped')">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="https://picsum.photos/60/60?random=1" alt="Hazardous Chemicals">
-      <h3>Hazardous Chemicals</h3>
+      <h3>⚠️ Hazardous Chemicals</h3>
     </div>
     <div class="flip-card-back">
       Industrial chemicals, solvents, pesticides, toxic substances.
@@ -357,8 +349,7 @@ For safety and legal reasons, we cannot remove certain items. Click on a card to
 <div class="flip-card" onclick="this.querySelector('.flip-card-inner').classList.toggle('flipped')">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="https://picsum.photos/60/60?random=2" alt="Automotive Fluids">
-      <h3>Automotive Fluids</h3>
+      <h3>🚗 Automotive Fluids</h3>
     </div>
     <div class="flip-card-back">
       Motor oil, gasoline, antifreeze, brake fluids.
@@ -369,8 +360,7 @@ For safety and legal reasons, we cannot remove certain items. Click on a card to
 <div class="flip-card" onclick="this.querySelector('.flip-card-inner').classList.toggle('flipped')">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="https://picsum.photos/60/60?random=3" alt="Propane Tanks">
-      <h3>Propane Tanks</h3>
+      <h3>🔥 Propane Tanks</h3>
     </div>
     <div class="flip-card-back">
       Grill tanks or compressed gas cylinders.
@@ -381,8 +371,7 @@ For safety and legal reasons, we cannot remove certain items. Click on a card to
 <div class="flip-card" onclick="this.querySelector('.flip-card-inner').classList.toggle('flipped')">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="https://picsum.photos/60/60?random=4" alt="Asbestos">
-      <h3>Asbestos</h3>
+      <h3>☣️ Asbestos</h3>
     </div>
     <div class="flip-card-back">
       Materials containing asbestos require licensed removal.
@@ -393,8 +382,7 @@ For safety and legal reasons, we cannot remove certain items. Click on a card to
 <div class="flip-card" onclick="this.querySelector('.flip-card-inner').classList.toggle('flipped')">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="https://picsum.photos/60/60?random=5" alt="Wet Paint">
-      <h3>Wet Paint</h3>
+      <h3>🎨 Wet Paint</h3>
     </div>
     <div class="flip-card-back">
       Paint must be fully dried before disposal.
@@ -405,8 +393,7 @@ For safety and legal reasons, we cannot remove certain items. Click on a card to
 <div class="flip-card" onclick="this.querySelector('.flip-card-inner').classList.toggle('flipped')">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="https://picsum.photos/60/60?random=6" alt="Biohazard Waste">
-      <h3>Biohazard Waste</h3>
+      <h3>🩺 Biohazard Waste</h3>
     </div>
     <div class="flip-card-back">
       Medical waste, needles, and hazardous biological materials.
@@ -456,5 +443,3 @@ Email: titanjunkllc@gmail.com
 </body>
 </html>
 
-  </div>
-</section>
